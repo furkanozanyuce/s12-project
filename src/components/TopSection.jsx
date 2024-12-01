@@ -1,3 +1,5 @@
+import langugaesData from "../languages";
+
 
 function TopSection() {
 
