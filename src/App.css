@@ -77,3 +77,20 @@ body {
   max-width: 350px;
   max-height: 375px;
 }
+
+.actual-button {
+  display: flex;
+  background-color: white;
+  color: var(--color-blue);
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
