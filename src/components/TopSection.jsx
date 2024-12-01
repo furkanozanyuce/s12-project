@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../contexts/UserContext";
 import axios from "axios";
 
@@ -6,33 +6,48 @@ import axios from "axios";
 function TopSection() {
 
     const {data, setData} = useContext(UserContext);
+    const [currentLanguage, setCurrentLanguage] = useState("en");
 
-    const handleLanguage = (event) => {
-        axios.post("https://reqres.in/api/workintech", data)
+    useEffect(() => {
+      const browserLang = navigator.language || navigator.languages[0];
+      const defaultLang = browserLang.startsWith("tr") ? "tr" : "en";
+      setCurrentLanguage(defaultLang);
+    }, []);
+
+    useEffect(() => {
+      if (data) {
+        axios
+          .post("https://reqres.in/api/workintech", data)
           .then((response) => {
             setData(response.data);
-            console.log(response.data);
           })
           .catch((error) => {
-            console.log(error);
-          })
+            console.error(error);
+          });
+      }
+    }, [currentLanguage, data, setData]);
+
+    const handleLanguage = () => {
+      setCurrentLanguage((prev) => (prev === "en" ? "tr" : "en"));
     }
+
+    const actualLang = data?.[currentLanguage]?.hero;
 
 
   return (
     <div className=" top-main bg-gradient-to-r from-[#4731D3] from-65% to-[#CBF281] to-35%">
         <div className="top-main2">
             <div className="dm-container">
-                <p>{data.en.hero.name}</p>
+                <p>{actualLang.name}</p>
                 <div className="dm-button">
-                    <button onClick={handleLanguage}>Türkçe'ye geç</button>
-                    <button>Dark Mode</button>
+                    <button onClick={handleLanguage}>{actualLang.langButton}</button>
+                    <button>{actualLang.modeButton}</button>
                 </div>
             </div>
             <div className="main-container">
                 <div className="main-container2">
-                    <h1>I am a Frontend Developer...</h1>
-                    <h2>...who likes to craft solid and scalable frontend products with great user experiences.</h2>
+                    <h1>{actualLang.title}</h1>
+                    <h2>{actualLang.about}</h2>
                     <div className="button-container">
                         <button className="actual-button"> <img src="./public/github.svg"/> Github</button>
                         <button className="actual-button"> <img src="./public/linkedin.svg"/> Linkedin</button>

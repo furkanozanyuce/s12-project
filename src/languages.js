@@ -12,7 +12,7 @@ const langugaesData = {
         hero: {
             name: "İsim",
             title: "Ben bir Frontend Developer'ım...",
-            about: "harika kullanıcı deneyimiyle sağlam ve ayarlanabilir frontend ürünleri tasarlarım",
+            about: "...harika kullanıcı deneyimiyle sağlam ve ayarlanabilir frontend ürünler tasarlamayı severim.",
             langButton: "FOR ENGLISH",
             modeButton: "GECE MODU",
         }
