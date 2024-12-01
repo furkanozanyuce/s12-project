@@ -23,7 +23,7 @@ function TopSection() {
     <div className=" top-main bg-gradient-to-r from-[#4731D3] from-65% to-[#CBF281] to-35%">
         <div className="top-main2">
             <div className="dm-container">
-                <p>İsim</p>
+                <p>{data.en.hero.name}</p>
                 <div className="dm-button">
                     <button onClick={handleLanguage}>Türkçe'ye geç</button>
                     <button>Dark Mode</button>
