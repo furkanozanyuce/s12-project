@@ -1,7 +1,22 @@
-import langugaesData from "../languages";
+import { useContext, useState } from "react";
+import { UserContext } from "../contexts/UserContext";
 
 
 function TopSection() {
+
+    const {data, setData} = useContext(UserContext);
+
+    const handleLanguage = (event) => {
+        axios.post("https://reqres.in/api/workintech", data)
+          .then((response) => {
+            setData(response.data);
+            console.log(response.data);
+          })
+          .catch((error) => {
+            console.log(error);
+          })
+    }
+
 
   return (
     <div className=" top-main bg-gradient-to-r from-[#4731D3] from-65% to-[#CBF281] to-35%">
@@ -9,7 +24,7 @@ function TopSection() {
             <div className="dm-container">
                 <p>İsim</p>
                 <div className="dm-button">
-                    <button>Türkçe'ye geç</button>
+                    <button onClick={handleLanguage}>Türkçe'ye geç</button>
                     <button>Dark Mode</button>
                 </div>
             </div>
