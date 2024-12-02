@@ -117,13 +117,16 @@ body {
   gap: 20px;
 }
 
+.skills-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .skills {
   display: flex;
   margin: 0 auto;
   max-width: 950px;
   justify-content: space-between;
-  margin-top: 80px;
-  margin-bottom: 80px;
 }
 
 .skills h1 {
