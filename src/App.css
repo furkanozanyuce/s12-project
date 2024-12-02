@@ -28,11 +28,9 @@ body {
 
 .top-main {
   font-size: 24px;
-  color: white;
 }
 
 .top-main h1 {
-  color: var(--color-lime);
   font-size: 54px;
   font-weight: bolder;
 }
@@ -40,7 +38,7 @@ body {
 .top-main2 {
   display: flex;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 950px;
   flex-direction: column;
 }
 
@@ -48,40 +46,51 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+  position: relative;
 }
 
 .dm-button {
   display: flex;
-  gap: 150px;
+  gap: 110px;
+  margin-left: auto;
+  margin-top: 15px;
 }
 
 .main-container {
   display: flex;
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   justify-content: space-between;
 }
 
 .main-container2 {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-self:flex-end;
   max-width: 530px;
   max-height: 375px;
   gap: 25px;
 }
 
+.name {
+  font-weight: bolder;
+  position: absolute;
+  margin-top: 40px;
+}
+
 .main-container img {
   border-radius: 18px;
   object-fit: cover;
-  max-width: 350px;
-  max-height: 375px;
+}
+
+.main-image {
+  width: 350px;
+  height: 375px;
+  overflow: hidden;
 }
 
 .actual-button {
   display: flex;
-  background-color: white;
-  color: var(--color-blue);
   padding: 10px;
   border-radius: 5px;
   align-items: center;
@@ -98,11 +107,20 @@ body {
 .skills {
   display: flex;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 950px;
   justify-content: space-between;
   margin-top: 80px;
   margin-bottom: 80px;
+}
 
+.skills h1 {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.skills span {
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .skill-icon {
@@ -112,6 +130,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  border-radius: 6px;
 }
 
 .skill-icon img {
@@ -123,12 +142,11 @@ body {
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem 15rem;
+  gap: 3rem 9rem;
 }
 
 .skill-item {
   display: flex;
-  
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
