@@ -6,6 +6,7 @@ const langugaesData = {
             about: "...who likes to craft solid and scalable frontend products with great user experiences.",
             langButton: "TÜRKÇE'YE GEÇ",
             modeButton: "DARK MODE",
+            lightMode: "LIGHT MODE",
         },
         skills: {
             title: "Skills",
@@ -27,6 +28,7 @@ const langugaesData = {
             about: "...harika kullanıcı deneyimiyle sağlam ve ayarlanabilir frontend ürünler tasarlamayı severim.",
             langButton: "FOR ENGLISH",
             modeButton: "GECE MODU",
+            lightMode: "GÜNDÜZ MODU",
         },
         skills: {
             title: "Yetenekler",

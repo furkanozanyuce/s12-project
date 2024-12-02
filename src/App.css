@@ -49,11 +49,24 @@ body {
   position: relative;
 }
 
+.toggle-dm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dm-button-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .dm-button {
   display: flex;
-  gap: 110px;
+  gap: 70px;
   margin-left: auto;
   margin-top: 15px;
+  font-size: 15px;
 }
 
 .main-container {

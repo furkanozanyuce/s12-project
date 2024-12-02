@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
+import DarkModeButton from "../button/DarkModeButton";
 
 
 function TopSection() {
@@ -17,7 +18,9 @@ function TopSection() {
                 <p className="name text-primary">{actualLang.name}</p>
                 <div className="dm-button">
                     <button className="text-primary font-medium" onClick={toggleLanguage}>{actualLang.langButton}</button>
-                    <button className="text-secondary font-medium">{actualLang.modeButton}</button>
+                    <div className="toggle-dm">
+                      <DarkModeButton />
+                    </div>
                 </div>
             </div>
             <div className="main-container">

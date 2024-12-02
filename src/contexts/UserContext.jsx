@@ -8,6 +8,23 @@ export const UserContext = createContext();
 export const UserContextProvider = ({children}) => {
     const [data, setData] = useState(langugaesData);
     const [currentLanguage, setCurrentLanguage] = useState("en");
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setIsDarkMode(prefersDarkMode);
+    }, []);
+
+    useEffect(() => {
+        const root = document.documentElement;
+        if (isDarkMode) {
+            root.classList.add('dark');
+        } else {
+            root.classList.remove('dark');
+        }
+    }, [isDarkMode]);
+
+
 
     useEffect(() => {
       const browserLang = navigator.language || navigator.languages[0];
@@ -32,8 +49,12 @@ export const UserContextProvider = ({children}) => {
       setCurrentLanguage((prev) => (prev === "en" ? "tr" : "en"));
     }
 
+    const toggleDarkMode = () => {
+        setIsDarkMode((prev) => !prev); // Toggle dark mode state
+    };
+
     return (
-        <UserContext.Provider value={{data, setData, currentLanguage, toggleLanguage}}>
+        <UserContext.Provider value={{data, setData, currentLanguage, toggleLanguage, isDarkMode, toggleDarkMode}}>
             {children}
         </UserContext.Provider>
     )
