@@ -1,37 +1,13 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
-import axios from "axios";
 
 
 function TopSection() {
 
-    const {data, setData} = useContext(UserContext);
-    const [currentLanguage, setCurrentLanguage] = useState("en");
+    const {data, currentLanguage, toggleLanguage} = useContext(UserContext);
+    
 
-    useEffect(() => {
-      const browserLang = navigator.language || navigator.languages[0];
-      const defaultLang = browserLang.startsWith("tr") ? "tr" : "en";
-      setCurrentLanguage(defaultLang);
-    }, []);
-
-    useEffect(() => {
-      if (data) {
-        axios
-          .post("https://reqres.in/api/workintech", data)
-          .then((response) => {
-            setData(response.data);
-          })
-          .catch((error) => {
-            console.error(error);
-          });
-      }
-    }, [currentLanguage, data, setData]);
-
-    const handleLanguage = () => {
-      setCurrentLanguage((prev) => (prev === "en" ? "tr" : "en"));
-    }
-
-    const actualLang = data?.[currentLanguage]?.hero;
+    const actualLang = data?.[currentLanguage]?.top;
 
 
   return (
@@ -40,7 +16,7 @@ function TopSection() {
             <div className="dm-container">
                 <p>{actualLang.name}</p>
                 <div className="dm-button">
-                    <button onClick={handleLanguage}>{actualLang.langButton}</button>
+                    <button onClick={toggleLanguage}>{actualLang.langButton}</button>
                     <button>{actualLang.modeButton}</button>
                 </div>
             </div>
