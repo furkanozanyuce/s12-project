@@ -19,6 +19,21 @@ const langugaesData = {
                 {name: "FIGMA", icon: "https://s3-alpha-sig.figma.com/img/8376/9568/62c7a95c81c85e20a72e7dd7b1642ddf?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J01SLQKesW1C-4jc4tRu99yeVQu5ey5yZrPzgd46eC3lI-AIuHs1XWbkyLPgisKPcvfIJHraZzpRVbkEyYsjevXmvSg9ya0MovtcCIx98JQa9vlcojPjlBdU5Es1XnkHgc3tlGUq4Zd1KBc~EldBix31rA8OPSVYbV34qykT2lKujv4~DHSBTE1Fvwn9mbfFkiXPc77k~99VKQKAb8tlH7NhYu-eqBxjCJ1tqgBVsjasq0dML2HsUGHf9JzQgMRZ8vpa5yddP5gFhuowYFIHCFgxbrdByrzmNaaOhQCYawsUnrP~tat-t59c5O3XFnGSUQnIPaAWdnr7JEa5Lv9tBQ__"},
 
             ]
+        },
+        profile: {
+            title: "Profile",
+            info: "Basic Information",
+            about: "About Me",
+            birthTitle: "Birth Day",
+            birthDate: "24.03.1996",
+            livingTitle: "Living Place",
+            livingPlace: "Ankara",
+            eduTitle: "Education Status",
+            edu: "Hacettepe Unv. Biology License, 2016",
+            roleTitle: "Preferred Role",
+            role: "Frontend, UI",
+            aboutme1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+            aboutme2: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
         }
     },
     tr: {
@@ -41,6 +56,21 @@ const langugaesData = {
                 {name: "FIGMA", icon: "https://s3-alpha-sig.figma.com/img/8376/9568/62c7a95c81c85e20a72e7dd7b1642ddf?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J01SLQKesW1C-4jc4tRu99yeVQu5ey5yZrPzgd46eC3lI-AIuHs1XWbkyLPgisKPcvfIJHraZzpRVbkEyYsjevXmvSg9ya0MovtcCIx98JQa9vlcojPjlBdU5Es1XnkHgc3tlGUq4Zd1KBc~EldBix31rA8OPSVYbV34qykT2lKujv4~DHSBTE1Fvwn9mbfFkiXPc77k~99VKQKAb8tlH7NhYu-eqBxjCJ1tqgBVsjasq0dML2HsUGHf9JzQgMRZ8vpa5yddP5gFhuowYFIHCFgxbrdByrzmNaaOhQCYawsUnrP~tat-t59c5O3XFnGSUQnIPaAWdnr7JEa5Lv9tBQ__"},
 
             ]
+        },
+        profile: {
+            title: "Profil",
+            info: "Basit Bilgiler",
+            about: "Benim Hakkımda",
+            birthTitle: "Doğum Tarihi",
+            birthDate: "24.03.1996",
+            livingTitle: "İkamet Şehri",
+            livingPlace: "Ankara",
+            eduTitle: "Eğitim Durumu",
+            edu: "Hacettepe Ünv. Biyoloji Lisans, 2016",
+            roleTitle: "Tercih Ettiği Rol",
+            role: "Frontend, UI",
+            aboutme1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+            aboutme2: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
         }
     }
 }
