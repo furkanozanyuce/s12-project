@@ -8,21 +8,24 @@ export const UserContext = createContext();
 export const UserContextProvider = ({children}) => {
     const [data, setData] = useState(langugaesData);
     const [currentLanguage, setCurrentLanguage] = useState("en");
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+
+      const storedDarkMode = localStorage.getItem("darkMode");
+      return storedDarkMode !== null
+        ? storedDarkMode === "true"
+        : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    });
 
     useEffect(() => {
-        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        setIsDarkMode(prefersDarkMode);
-    }, []);
-
-    useEffect(() => {
-        const root = document.documentElement;
-        if (isDarkMode) {
-            root.classList.add('dark');
-        } else {
-            root.classList.remove('dark');
-        }
-    }, [isDarkMode]);
+    const root = document.documentElement;
+    if (isDarkMode) {
+      root.classList.add("dark");
+      localStorage.setItem("darkMode", "true");
+    } else {
+      root.classList.remove("dark");
+      localStorage.setItem("darkMode", "false");
+    }
+  }, [isDarkMode]);
 
 
 
