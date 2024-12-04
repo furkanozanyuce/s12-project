@@ -53,7 +53,7 @@ export const UserContextProvider = ({children}) => {
     }
 
     const toggleDarkMode = () => {
-        setIsDarkMode((prev) => !prev); // Toggle dark mode state
+        setIsDarkMode((prev) => !prev);
     };
 
     return (
