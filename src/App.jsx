@@ -4,6 +4,7 @@ import TopSection from './components/TopSection'
 import SkillsSection from './components/SkillsSection'
 import ProfileSection from './components/ProfileSection'
 import { UserContextProvider } from './contexts/UserContext'
+import ProjectsSection from './components/ProjectsSection'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <TopSection />
       <SkillsSection />
       <ProfileSection />
+      <ProjectsSection />
     </UserContextProvider>
   )
 }
