@@ -34,7 +34,29 @@ const langugaesData = {
             role: "Frontend, UI",
             aboutme1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
             aboutme2: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
-        }
+        },
+        project: {
+            title: "Projects",
+            projects: [
+                {name: "Workintech", image: "https://s3-alpha-sig.figma.com/img/ad50/81bf/69bb4825e42350e768340fdbec09d78b?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W-clAOBQbxDC~Z69d1Uqlyf6fT9JKf~AiJC84mrL185rAA89NIQzy5lHo2KAOjwLui9lxa~vYMN~7WVEZt9l-gu0zrz-UX70KGi~wQX9WIJEhkCT46ru5MF1BHk0YD8peYO8g-SOEGUe76ylM10eywxWKRBUUsCQOOCzdJh9x~PFQyHae~MsVVtz0~9urMdui8vfOnHKXOWlO16oVWmk04FIwjfieRLNWvq7BPNgNB9MTGmjDLjA3bVXgoEaMR5c5OJn3yk2Q-ykW9uXUbSpVL~wF4xQIQ9L8KlrDT-hyzzVtHP6W4f4PR4Oxj-XpHZyyVgtmePeBCQ1Zv630bKspw__", par: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.", skills: [
+                    {skill: "react"},
+                    {skill: "redux"},
+                    {skill: "vercel"},
+                ], links: [
+                    {link: "View Site"},
+                    {link: "Github"}
+                ]},
+                {name: "Journey", image: "https://s3-alpha-sig.figma.com/img/600e/630b/a9370e031b441737654465d0f374af51?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DbbbB7utvQbn499o4D2i78qttO38iyzSq3dKSv7LkmNo1DIm9-iTjSAjoXlroPBIkzH17E7WoDGJzBeC2IBn05oUW8rwt77PLlI-yOpPMMQAmLmffpwNu22xpw4H2XBNOidnWR62WYnSjCQcHWccbVIkQXyD6uplA0Ycvlcucl~WEc43RF9VP~-kGuUeOQpe4yWNiOYVCi~QobCr9PwW3tF97Mk5yoDEHKOC-PwAVt2qGm3b7Iq0h45Ffx5Fk-~GGNnjWQqKzVLZWufpeG9vbG1yNkBihRNfl6MNBV5EynRPWUoYYcCPFZ0PzkbC8ds-f1EyoWS1Q8JXJ~vwN6FqyA__", par: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.", skills: [
+                    {skill: "react"},
+                    {skill: "redux"},
+                    {skill: "vercel"},
+                ], links: [
+                    {link: "View Site"},
+                    {link: "Github"}
+                ]},
+
+            ],
+        },
     },
     tr: {
         top: {
@@ -71,7 +93,28 @@ const langugaesData = {
             role: "Frontend, UI",
             aboutme1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
             aboutme2: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
-        }
+        },
+        project: {
+            title: "Projeler",
+            projects: [
+                {name: "Workintech", image: "https://s3-alpha-sig.figma.com/img/ad50/81bf/69bb4825e42350e768340fdbec09d78b?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W-clAOBQbxDC~Z69d1Uqlyf6fT9JKf~AiJC84mrL185rAA89NIQzy5lHo2KAOjwLui9lxa~vYMN~7WVEZt9l-gu0zrz-UX70KGi~wQX9WIJEhkCT46ru5MF1BHk0YD8peYO8g-SOEGUe76ylM10eywxWKRBUUsCQOOCzdJh9x~PFQyHae~MsVVtz0~9urMdui8vfOnHKXOWlO16oVWmk04FIwjfieRLNWvq7BPNgNB9MTGmjDLjA3bVXgoEaMR5c5OJn3yk2Q-ykW9uXUbSpVL~wF4xQIQ9L8KlrDT-hyzzVtHP6W4f4PR4Oxj-XpHZyyVgtmePeBCQ1Zv630bKspw__", par: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve bir NPM paketi olarak mevcuttur ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılar.", skills: [
+                    {skill: "react"},
+                    {skill: "redux"},
+                    {skill: "vercel"},
+                ], links: [
+                    {link: "Siteyi Görüntüle"},
+                    {link: "Github"}
+                ]},
+                {name: "Journey", image: "https://s3-alpha-sig.figma.com/img/600e/630b/a9370e031b441737654465d0f374af51?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DbbbB7utvQbn499o4D2i78qttO38iyzSq3dKSv7LkmNo1DIm9-iTjSAjoXlroPBIkzH17E7WoDGJzBeC2IBn05oUW8rwt77PLlI-yOpPMMQAmLmffpwNu22xpw4H2XBNOidnWR62WYnSjCQcHWccbVIkQXyD6uplA0Ycvlcucl~WEc43RF9VP~-kGuUeOQpe4yWNiOYVCi~QobCr9PwW3tF97Mk5yoDEHKOC-PwAVt2qGm3b7Iq0h45Ffx5Fk-~GGNnjWQqKzVLZWufpeG9vbG1yNkBihRNfl6MNBV5EynRPWUoYYcCPFZ0PzkbC8ds-f1EyoWS1Q8JXJ~vwN6FqyA__", par: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve bir NPM paketi olarak mevcuttur ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılar.", skills: [
+                    {skill: "react"},
+                    {skill: "redux"},
+                    {skill: "vercel"},
+                ], links: [
+                    {link: "Siteyi Görüntüle"},
+                    {link: "Github"}
+                ]}
+            ],
+        },
     }
 }
 
