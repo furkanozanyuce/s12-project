@@ -57,6 +57,17 @@ const langugaesData = {
 
             ],
         },
+        footer: {
+            title: "Send me a message!",
+            par: "Got a question or proposal, or just want to say hello? Go ahead.",
+            mail: "almilasucode@gmail.com",
+            icons: [
+                {icon: "/twitter.svg"},
+                {icon: "/codepen.svg"},
+                {icon: "/at-sign.svg"},
+                {icon: "/instagram.svg"},
+            ]
+        }
     },
     tr: {
         top: {
@@ -113,6 +124,17 @@ const langugaesData = {
                     {link: "Siteyi Görüntüle"},
                     {link: "Github"}
                 ]}
+            ],
+        },
+        footer: {
+            title: "Bana bir mesaj gönder!",
+            par: "Bir sorun veya teklifin, ya da sadece merhaba mı demek istiyorsun? Buyrun.",
+            mail: "almilasucode@gmail.com",
+            icons: [
+                {icon: "/twitter.svg"},
+                {icon: "/codepen.svg"},
+                {icon: "/at-sign.svg"},
+                {icon: "/instagram.svg"},
             ],
         },
     }
