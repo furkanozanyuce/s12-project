@@ -286,6 +286,7 @@ body {
   border-bottom-left-radius: 12px;
   object-fit: cover;
   object-position: 0;
+  border-right: 1px solid #D2D2D2;
 }
 
 .actual-project {
