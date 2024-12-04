@@ -90,7 +90,8 @@ body {
 }
 
 .name {
-  font-weight: bolder;
+  font-size: 32px;
+  font-weight: 700;
   position: absolute;
   margin-top: 40px;
 }
