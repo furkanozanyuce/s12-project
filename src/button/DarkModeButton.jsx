@@ -11,14 +11,14 @@ const DarkModeButton = () => {
   return (
     <div className='dm-button-text'>
       <button
-        className={`relative inline-flex items-center cursor-pointer p-2 w-16 h-8 rounded-full transition-colors duration-300 ease-in-out ${
+        className={`relative inline-flex items-center cursor-pointer p-2 w-14 h-8 rounded-full transition-colors duration-300 ease-in-out ${
           isDarkMode ? 'bg-[#3A3A3A]' : 'bg-[#8F88FF]'
         }`}
         onClick={toggleDarkMode}
       >
         <span
           className={`absolute w-6 h-6 bg-[#FFE86E] rounded-full transform transition-all duration-300 ease-in-out ${
-            isDarkMode ? 'translate-x-0' : 'translate-x-7'
+            isDarkMode ? 'translate-x-0' : 'translate-x-5'
           }`}
         ></span>
       </button>
