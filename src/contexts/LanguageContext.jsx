@@ -7,13 +7,21 @@ export const LanguageContext = createContext();
 
 export const LanguageContextProvider = ({children}) => {
     const [data, setData] = useState(langugaesData);
-    const [currentLanguage, setCurrentLanguage] = useState("en");
+    const [currentLanguage, setCurrentLanguage] = useState(() => {
+      const storedLang = localStorage.getItem("currentLanguage");
+      if (storedLang) {
+          return storedLang;
+      } else {
+          const browserLang = navigator.language || navigator.languages[0];
+          return browserLang.startsWith("tr") ? "tr" : "en";
+      }
+    });
 
     useEffect(() => {
-      const browserLang = navigator.language || navigator.languages[0];
-      const defaultLang = browserLang.startsWith("tr") ? "tr" : "en";
-      setCurrentLanguage(defaultLang);
-    }, []);
+      if (currentLanguage) {
+          localStorage.setItem("currentLanguage", currentLanguage);
+      }
+    }, [currentLanguage]);
 
     useEffect(() => {
       if (data) {
@@ -31,10 +39,6 @@ export const LanguageContextProvider = ({children}) => {
     const toggleLanguage = () => {
       setCurrentLanguage((prev) => (prev === "en" ? "tr" : "en"));
     }
-
-    const toggleDarkMode = () => {
-        setIsDarkMode((prev) => !prev);
-    };
 
     return (
         <LanguageContext.Provider value={{data, setData, currentLanguage, toggleLanguage}}>
