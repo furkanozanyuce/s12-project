@@ -16,7 +16,7 @@ function SkillsSection() {
                 {skills.map((skill, index) => (
                     <div key={index} className="skill-item flex items-center gap-[15px]">
                         <div className="skill-icon w-[120px] h-[120px] flex justify-center items-center	overflow-hidden rounded-[6px]">
-                            <img className="w-full	h-full object-cover" src={skill.icon} alt={`${skill.name} icon`} />
+                            <img className="w-full	h-full object-cover" src={skill.icon} />
                         </div>
                         <span className="skill-name text-[#777777] dark:text-white text-[24px] font-medium">{skill.name}</span>
                     </div>

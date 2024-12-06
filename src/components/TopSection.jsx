@@ -32,7 +32,7 @@ function TopSection() {
                         <button className="actual-button flex p-2.5 rounded-[5px] items-center gap-[5px] text-[18px] font-medium bg-white text-secondary border-solid border-2 border-white dark:bg-[#252128] dark:text-white"> <img src="/linkedin.svg"/> Linkedin</button>
                     </div>
                 </div>
-                <img className="main-image rounded-[18px] object-cover w-[400px] h-[425px] overflow-hidden" src="https://s3-alpha-sig.figma.com/img/76b0/6993/b04fd1fa29a883e2f4b8b8577a5c82eb?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=G~AogFFfiA3Yl2GccYd4A267KmgCGncPIJRrpixm4xV9Zn6hfXm1UUvyHvJ6lkKrW3u0FE2ECSHssuPYhB1taepp57vJXsCIRjNdnaA7g1VkWv3wXOKdGAdqAZlpZsYSQ6wj3d0F-qquGprCPpuv3FaxJzRS7uVUM1j4StUlmC-7eJxJD2K7Rzps6jomuZ83XJ7JZ1vzuXr~DWckF~m76VYctm8-47B1zPjyApgUZDxRbrSAML6CCWrpmkXXRZy9kfodrWvrUj-2Vta8VbC7xmksoszY6EJtoPVnEqwEeNkpKbavM-DoLsFwxsE7ROzW3uozCRlv70pClFdrrvQYgg__" />
+                <img className="main-image rounded-[18px] object-cover w-[400px] h-[425px] overflow-hidden" src="images/top-section.png" />
             </div>
         </div>
     </div>

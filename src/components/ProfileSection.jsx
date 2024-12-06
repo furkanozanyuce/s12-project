@@ -30,7 +30,7 @@ function ProfileSection() {
                     </div>
                 </div>
                 <div className="image-profile">
-                <img className="w-[300px] h-[290px] rounded-[10px] object-cover" src="https://s3-alpha-sig.figma.com/img/ec36/93fd/2fc15cffc612b2448fb1f38e4c8c72fd?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SYSrxLdI1~bl4daQvgWUtYHELpqwWuTwa6V-2boQI9zjrsxuoosDkSMGUzCm7EUSOrsnd0O-8UmtjGrEyVCahioihPvh2RQZSVxLbABI0Xq5TTIk~zJZqSiZLlsFxArEJwYSOBA1PMGK3tXTRnGaefX~BYFKkJym-BmBjrksONASFwb2nQ3bLtfFL7IPDUsITLgDC0oQdY3lGf-KbdHKQJKgZYETs6slp-U-R4~kSKGx6ttpBRmjFNn~IliykJrBn-yS0lFWnQ7Kb-edx~JYAByGV2nahmDI0~pSWOt0eQhfqvVQRpISHCkfS9SWBSDScCruo-Kfk6lq1Uc5d-hs5Q__" alt="" />
+                <img className="w-[300px] h-[290px] rounded-[10px] object-cover" src="images/profile-section.png" />
                 </div>
                 <div>
                     <h2 className="text-[30px] font-medium leading-[24px]">{actualLang.about}</h2>
