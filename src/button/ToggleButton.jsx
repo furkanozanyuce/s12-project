@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { LanguageContext } from '../contexts/LanguageContext';
 import { ThemeContext } from '../contexts/ThemeContext';
 
-const DarkModeButton = () => {
+const ToggleButton = () => {
   const { data, currentLanguage } = useContext(LanguageContext);
   const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
 
@@ -30,4 +30,4 @@ const DarkModeButton = () => {
   );
 };
 
-export default DarkModeButton;
+export default ToggleButton;
