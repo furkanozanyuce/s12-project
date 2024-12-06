@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { UserContext } from "../contexts/UserContext";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 function ProjectsSection() {
 
-    const { data, currentLanguage } = useContext(UserContext);
+    const { data, currentLanguage } = useContext(LanguageContext);
 
     const title = data?.[currentLanguage]?.project?.title;
     const projects = data?.[currentLanguage]?.project?.projects;

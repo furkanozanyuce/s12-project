@@ -3,31 +3,11 @@ import langugaesData from "../languages";
 import axios from "axios";
 
 
-export const UserContext = createContext();
+export const LanguageContext = createContext();
 
-export const UserContextProvider = ({children}) => {
+export const LanguageContextProvider = ({children}) => {
     const [data, setData] = useState(langugaesData);
     const [currentLanguage, setCurrentLanguage] = useState("en");
-    const [isDarkMode, setIsDarkMode] = useState(() => {
-
-      const storedDarkMode = localStorage.getItem("darkMode");
-      return storedDarkMode !== null
-        ? storedDarkMode === "true"
-        : window.matchMedia("(prefers-color-scheme: dark)").matches;
-    });
-
-    useEffect(() => {
-    const root = document.documentElement;
-    if (isDarkMode) {
-      root.classList.add("dark");
-      localStorage.setItem("darkMode", "true");
-    } else {
-      root.classList.remove("dark");
-      localStorage.setItem("darkMode", "false");
-    }
-  }, [isDarkMode]);
-
-
 
     useEffect(() => {
       const browserLang = navigator.language || navigator.languages[0];
@@ -57,8 +37,8 @@ export const UserContextProvider = ({children}) => {
     };
 
     return (
-        <UserContext.Provider value={{data, setData, currentLanguage, toggleLanguage, isDarkMode, toggleDarkMode}}>
+        <LanguageContext.Provider value={{data, setData, currentLanguage, toggleLanguage}}>
             {children}
-        </UserContext.Provider>
+        </LanguageContext.Provider>
     )
 }

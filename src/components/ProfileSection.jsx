@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { UserContext } from "../contexts/UserContext";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 function ProfileSection() {
 
-    const {data, currentLanguage} = useContext(UserContext);
+    const {data, currentLanguage} = useContext(LanguageContext);
 
     const actualLang = data?.[currentLanguage]?.profile;
 

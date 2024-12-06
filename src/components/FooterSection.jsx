@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { UserContext } from "../contexts/UserContext";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 function FooterSection() {
 
-    const { data, currentLanguage } = useContext(UserContext);
+    const { data, currentLanguage } = useContext(LanguageContext);
 
     const footer = data?.[currentLanguage]?.footer;
     const icons = data?.[currentLanguage]?.footer?.icons;

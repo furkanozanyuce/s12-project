@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import { UserContext } from "../contexts/UserContext";
-import DarkModeButton from "../button/DarkModeButton";
+import { LanguageContext } from "../contexts/LanguageContext";
+import DarkModeButton from "../button/ToggleButton";
 
 
 function TopSection() {
 
-    const {data, currentLanguage, toggleLanguage} = useContext(UserContext);
+    const {data, currentLanguage, toggleLanguage} = useContext(LanguageContext);
     
 
     const actualLang = data?.[currentLanguage]?.top;

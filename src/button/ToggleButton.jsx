@@ -1,8 +1,11 @@
 import React, { useContext } from 'react';
-import { UserContext } from '../contexts/UserContext';
+import { LanguageContext } from '../contexts/LanguageContext';
+import { ThemeContext } from '../contexts/ThemeContext';
 
 const DarkModeButton = () => {
-  const { isDarkMode, toggleDarkMode, data, currentLanguage } = useContext(UserContext);
+  const { data, currentLanguage } = useContext(LanguageContext);
+  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
+
 
   const darkMode = data?.[currentLanguage]?.top.modeButton || "DARK MODE";
   const lightMode = data?.[currentLanguage]?.top.lightMode || "LIGHT MODE";
