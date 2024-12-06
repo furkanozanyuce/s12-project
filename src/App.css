@@ -25,13 +25,13 @@ body {
   min-height: 100vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1030px) {
   html.dark .top-main {
     background: linear-gradient(to right, #171043 90%, #1A210B 10%);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1030px) {
   .top-main {
     padding: 20px;
     background: linear-gradient(to right, #4731D3 90%, #CBF281 10%);
@@ -84,7 +84,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1030px) {
   .skills-container {
     padding: 40px 20px;
   }
@@ -116,7 +116,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1030px) {
   .profile-container {
     padding: 40px 20px;
   }
@@ -169,7 +169,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1030px) {
   .projects-container {
     padding: 40px 20px;
   }
@@ -221,7 +221,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1030px) {
   .footer-container {
     padding: 40px 20px;
   }
