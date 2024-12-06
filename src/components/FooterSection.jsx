@@ -16,7 +16,7 @@ function FooterSection() {
                 <p className="text-secondary text-[20px] font-medium underline dark:text-[#8F88FF]">{footer.mail}</p>
                 <div className="footer-images flex gap-[20px]">
                 {icons.map((icon, i) => (
-                    <div>
+                    <div key={i}>
                         <img className="footer-img w-[35px] h-[35px]" src={icon.icon} />
                     </div>
                 ))}
