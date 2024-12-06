@@ -32,7 +32,7 @@ function ProfileSection() {
                 <div className="image-profile">
                 <img className="w-[300px] h-[290px] rounded-[10px] object-cover" src="images/profile-section.png" />
                 </div>
-                <div>
+                <div className="for-about">
                     <h2 className="text-[30px] font-medium leading-[24px]">{actualLang.about}</h2>
                     <div className="about-me w-[300px] text-[18px] font-normal flex flex-col mt-[25px] gap-[20px] leading-[27px]">
                         <p>{actualLang.aboutme1}</p>

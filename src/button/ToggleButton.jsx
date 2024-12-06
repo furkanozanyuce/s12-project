@@ -25,7 +25,7 @@ const ToggleButton = () => {
           }`}
         ></span>
       </button>
-      <p className="text-secondary dark:text-[#D9D9D9] font-medium">{isDarkMode ? lightMode : darkMode}</p>
+      <p className="for-mobile text-secondary dark:text-[#D9D9D9] font-medium">{isDarkMode ? lightMode : darkMode}</p>
     </div>
   );
 };
