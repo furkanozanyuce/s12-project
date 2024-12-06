@@ -3,20 +3,23 @@ import './App.css'
 import TopSection from './components/TopSection'
 import SkillsSection from './components/SkillsSection'
 import ProfileSection from './components/ProfileSection'
-import { UserContextProvider } from './contexts/UserContext'
+import { LanguageContextProvider } from './contexts/LanguageContext'
+import { ThemeContextProvider } from './contexts/ThemeContext'
 import ProjectsSection from './components/ProjectsSection'
 import FooterSection from './components/FooterSection'
 
 function App() {
 
   return (
-    <UserContextProvider>
+    <LanguageContextProvider>
+      <ThemeContextProvider>
       <TopSection />
       <SkillsSection />
       <ProfileSection />
       <ProjectsSection />
       <FooterSection />
-    </UserContextProvider>
+      </ThemeContextProvider>
+    </LanguageContextProvider>
   )
 }
 
