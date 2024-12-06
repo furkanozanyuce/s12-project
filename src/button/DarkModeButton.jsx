@@ -9,7 +9,7 @@ const DarkModeButton = () => {
 
 
   return (
-    <div className='dm-button-text'>
+    <div className='dm-button-text flex items-center gap-2.5'>
       <button
         className={`relative inline-flex items-center cursor-pointer p-2 w-14 h-8 rounded-full transition-colors duration-300 ease-in-out ${
           isDarkMode ? 'bg-[#3A3A3A]' : 'bg-[#8F88FF]'
