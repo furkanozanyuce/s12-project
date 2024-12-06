@@ -17,7 +17,7 @@ function TopSection() {
             <div className="dm-container flex relative justify-between mt-[15px]">
                 <p className="name text-primary text-[32px] font-bold absolute mt-[40px]">{actualLang.name}</p>
                 <div className="dm-button flex gap-[80px] mt-[15px] text-[15px] ml-[640px] relative">
-                    <button className="text-primary dark:text-[#777777] hover:text-[#C1BAED] dark:hover:text-primary font-medium" onClick={toggleLanguage}>{actualLang.langButton}</button>
+                    <button className="text-primary dark:text-[#777777] hover:text-[#C1BAED] dark:hover:text-primary font-medium drop-shadow-lg" onClick={toggleLanguage}>{actualLang.langButton}</button>
                     <div className="toggle-dm flex items-center gap-2.5">
                       <ToggleButton />
                     </div>
